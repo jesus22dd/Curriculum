@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Pablo Paz Uribe | Currículum</title>
+    <style>
+        /* ----- ESTILOS GENERALES ----- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        /* ----- ENCABEZADO ----- */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #0078d7;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 25px;
+            border: 2px solid #ddd;
+        }
+
+        .header-info h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .header-info .title {
+            font-size: 18px;
+            color: #0078d7;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+        }
+
+        /* ----- SECCIONES ----- */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #0078d7;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        li:before {
+            content: "•";
+            color: #0078d7;
+            position: absolute;
+            left: 0;
+        }
+
+        .education-item, .project-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item strong, .project-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .education-item span, .project-item span {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .skills-category {
+            margin-bottom: 15px;
+        }
+
+        .skills-category strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        a {
+            color: #0078d7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ----- PIE DE PÁGINA ----- */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* ----- MODO OSCURO ----- */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1e1e1e;
+                color: #ddd;
+            }
+            
+            .cv-container {
+                background: #2a2a2a;
+                box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            }
+            
+            .header {
+                border-bottom-color: #409eff;
+            }
+            
+            .header-info h1 {
+                color: #f0f0f0;
+            }
+            
+            .header-info .title {
+                color: #409eff;
+            }
+            
+            h2 {
+                color: #409eff;
+                border-bottom-color: #444;
+            }
+            
+            a {
+                color: #409eff;
+            }
+            
+            .education-item span, .project-item span {
+                color: #aaa;
+            }
+            
+            .skills-category strong {
+                color: #ccc;
+            }
+            
+            footer {
+                border-top-color: #444;
+                color: #aaa;
+            }
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+            
+            .cv-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header class="header">
+            <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Avatar de Jesús Pablo Paz Uribe">
+            <div class="header-info">
+                <h1>Jesús Pablo Paz Uribe</h1>
+                <div class="title">Desarrollador de Software</div>
+                <div class="contact-info">
+                    <div>📍 Santa Cruz, Bolivia</div>
+                    <div>📧 pazjesu17@gmail.com</div>
+                    <div>📞 +591 71397999</div>
+                    <div>💻 <a href="https://github.com/jesus22dd/" target="_blank">GitHub</a></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="perfil">
+                <h2>Perfil Profesional</h2>
+                <p>
+                    Programador apasionado por el desarrollo de software, especializado en la creación de 
+                    <strong>aplicaciones web</strong> y <strong>aplicaciones móviles</strong> modernas. 
+                    Disfruto transformar ideas en soluciones funcionales y escalables, utilizando tecnologías actuales 
+                    que combinan diseño, rendimiento y experiencia de usuario. Mi objetivo es seguir creciendo como 
+                    ingeniero en sistemas, creando proyectos que generen valor y eficiencia tecnológica.
+                </p>
+            </section>
+
+            <section id="educacion">
+                <h2>Educación</h2>
+                <div class="education-item">
+                    <strong>Ingeniería en Sistemas</strong>
+                    <span>Universidad Privada Domingo Savio (Actualidad)</span>
+                </div>
+                <div class="education-item">
+                    <strong>Programador Técnico</strong>
+                    <span>Instituto INFÓCAL</span>
+                </div>
+                <div class="education-item">
+                    <strong>Inglés B3</strong>
+                    <span>Centro Boliviano Americano (CBA)</span>
+                </div>
+                <div class="education-item">
+                    <strong>Bachillerato</strong>
+                    <span>Colegio Fe y Alegría La Merced</span>
+                </div>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-category">
+                    <strong>Lenguajes de Programación</strong>
+                    <div>C#, Java, JavaScript, TypeScript</div>
+                </div>
+                <div class="skills-category">
+                    <strong>Frameworks y Tecnologías</strong>
+                    <div>.NET 8, Windows Forms, ASP.NET Core API, Blazor WebAssembly, React + Vite</div>
+                </div>
+                <div class="skills-category">
+                    <strong>Áreas de Desarrollo</strong>
+                    <div>Aplicaciones de escritorio, Web y móviles</div>
+                </div>
+                <div class="skills-category">
+                    <strong>Bases de Datos</strong>
+                    <div>SQL Server, MySQL</div>
+                </div>
+                <div class="skills-category">
+                    <strong>Herramientas</strong>
+                    <div>Visual Studio, VS Code, Git, GitHub</div>
+                </div>
+            </section>
+
+            <section id="proyectos">
+                <h2>Proyectos Destacados</h2>
+                <div class="project-item">
+                    <strong>Repositorio de Proyectos</strong>
+                    <span><a href="https://github.com/jesus22dd/" target="_blank">https://github.com/jesus22dd/</a></span>
+                </div>
+                <p>Proyectos personales y académicos disponibles en mi repositorio de GitHub.</p>
+            </section>
+        </main>
+
+        <footer>
+            © 2025 Jesús Pablo Paz Uribe — Desarrollador de Software
+        </footer>
+    </div>
+
+</body>
+</html>
